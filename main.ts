@@ -91,3 +91,5 @@ const handler = async (req: Request): Promise<Response> => {
   
   return new Response("Endopoint not found", {status: 404});
 }
+
+Deno.serve({port: 3000}, handler);
